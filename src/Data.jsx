@@ -2,12 +2,12 @@ const sites = {
     moorfield: {
         projectId: "TCES-001",
         clientName: "TCES",
-        projectName: "Moorfield Site",
+        projectName: "Moorfield Topographical Survey",
         modelUrl: "https://pub-e80a3de0c14a485bbd89f7a1513341ba.r2.dev/moorfield.glb",
         deliverables: {
             model: "https://pub-e80a3de0c14a485bbd89f7a1513341ba.r2.dev/moorfield.glb",
-            cad: "",
-            sheet: ""
+            cad: "https://pub-e80a3de0c14a485bbd89f7a1513341ba.r2.dev/moorfield.glb",
+            sheet: "https://pub-e80a3de0c14a485bbd89f7a1513341ba.r2.dev/moorfield.glb"
         },
         date: "30/09/2025",
         surveyor: "Tomilola Olaniyi",

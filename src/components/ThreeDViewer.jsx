@@ -32,7 +32,7 @@ export default function ThreeDViewer({fileInfo}) {
     return (
         <>
             {fileInfo && (
-                <div className="px-6 md:px-8 pb-8 space-y-4">
+                <div className="px-2 md:px-8 pb-8  space-y-4">
                     <div className="h-[65vh] w-full rounded-2xl overflow-hidden bg-white shadow">
                         <Canvas camera={{ position: [0, 10, 0], fov: 50 }} dpr={[1, 2]}>
                             <Suspense fallback={<Loader />}> 

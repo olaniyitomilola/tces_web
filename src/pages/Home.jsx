@@ -29,7 +29,7 @@ export default function Home() {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center p-6 md:p-8 mt-35 md:mt-50">
+        <div className="flex flex-col items-center justify-center p-6 md:p-8 flex-1">
             <h2 className="text-2xl md:text-4xl font-semibold mb-4 animated-gradient text-center">
                 Multi-Sector Expertise, One Trusted Partner
             </h2>            

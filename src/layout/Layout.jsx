@@ -12,7 +12,7 @@ export default function Layout() {
     return (
         <div className="min-h-screen w-full bg-neutral-50 text-neutral-900 flex flex-col">
             <Header clientInfo={clientInfo} />
-            <div className="flex-1 flex flex-col">
+            <div className="flex-1 flex flex-col w-full justify-center items-center">
                 <Body setClientInfo={handleSetClientInfo} modelUrl={modelUrl} />
             </div>
             <footer className="bg-black text-white py-4 text-center w-full">
