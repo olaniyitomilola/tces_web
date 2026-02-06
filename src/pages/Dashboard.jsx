@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import SidePanel from '../components/Sidepanel';
+import Navbar from '../components/Navbar';
 import MainPanel from '../components/MainPanel';
 
 // Dashboard.jsx
@@ -9,8 +9,6 @@ export default function Dashboard() {
 
     return (
         <div className="dashboard">
-            <SidePanel onSelectProject={setSelectedProject} />
-            <MainPanel selectedProject={selectedProject} />
         </div>
     );
 }
