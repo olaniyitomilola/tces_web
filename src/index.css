@@ -1,31 +1,114 @@
 @import "tailwindcss";
 
 
-.animated-gradient {
-  background: linear-gradient(90deg, #f97316, #000, #2563eb, #f97316);
-  background-size: 300% 300%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent !important;
-  animation: gradientMove 4s linear infinite;
+/* Force light mode - disable dark mode completely */
+:root {
+    color-scheme: light only;
 }
 
-@keyframes gradientMove {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 100% 50%; }
+html {
+    color-scheme: light only;
+    background-color: white;
 }
 
-@keyframes fadeIn {
+body {
+    color-scheme: light only;
+    background-color: white;
+    color: black;
+    scroll-behavior: smooth;
+}
+
+/* Prevent any dark mode overrides */
+@media (prefers-color-scheme: dark) {
+    :root,
+    html,
+    body {
+        color-scheme: light only;
+        background-color: white !important;
+        color: black !important;
+    }
+}
+.carousel-track {
+  animation: scroll 25s linear infinite;
+}
+
+@keyframes scroll {
   from {
-    opacity: 0;
+    transform: translateX(0);
   }
   to {
-    opacity: 1;
+    transform: translateX(-50%);
   }
 }
 
-.animate-fade-in {
-  animation: fadeIn 1s ease-in-out;
+.animated-gradient {
+    background: linear-gradient(
+        90deg,
+        #ffffff,
+        #f0f9ff,
+        #e0f2fe,
+        #bae6fd,
+        #7dd3fc,
+        #38bdf8,
+        #0ea5e9,
+        #38bdf8,
+        #7dd3fc,
+        #bae6fd,
+        #e0f2fe,
+        #f0f9ff,
+        #ffffff
+    );
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradient-shift 8s ease infinite;
 }
 
 
+.non-animated-gradient {
+    background: linear-gradient(
+        90deg,
+        #FF8C42,
+                #0ea5e9,
+
+                #ff8c42,
+
+        
+        #0ea5e9,
+        #38bdf8,
+        #7dd3fc,
+        #bae6fd,
+        #f0f9ff
+    );
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+@keyframes gradient-shift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Carousel Animation */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.carousel-animate {
+    animation: scroll-left 30s linear infinite;
+}
