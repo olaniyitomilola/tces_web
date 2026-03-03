@@ -23,17 +23,17 @@ export default function Navbar() {
             >
                 <ul className="flex flex-col gap-1 p-4 md:p-0 md:flex-row md:items-center md:gap-8">
                     <li>
-                        <a className="block py-2 px-3 rounded-md text-gray-700 hover:text-[#FF8C42] hover:bg-orange-50 md:hover:bg-transparent transition-colors md:p-0 whitespace-nowrap" href="#expertise">
+                        <a className="block py-2 px-3 rounded-md text-gray-700 hover:text-[#FF8C42] hover:bg-orange-50 md:hover:bg-transparent transition-colors md:p-0 whitespace-nowrap" href="expertise">
                             Expertise
                         </a>
                     </li>
                     <li>
-                        <a className="block py-2 px-3 rounded-md text-gray-700 hover:text-[#FF8C42] hover:bg-orange-50 md:hover:bg-transparent transition-colors md:p-0 whitespace-nowrap" href="#industries">
+                        <a className="block py-2 px-3 rounded-md text-gray-700 hover:text-[#FF8C42] hover:bg-orange-50 md:hover:bg-transparent transition-colors md:p-0 whitespace-nowrap" href="industries">
                             Industries
                         </a>
                     </li>
                     <li>
-                        <a className="block py-2 px-3 rounded-md text-gray-700 hover:text-[#FF8C42] hover:bg-orange-50 md:hover:bg-transparent transition-colors md:p-0 whitespace-nowrap" href="#projects">
+                        <a className="block py-2 px-3 rounded-md text-gray-700 hover:text-[#FF8C42] hover:bg-orange-50 md:hover:bg-transparent transition-colors md:p-0 whitespace-nowrap" href="projects">
                             Projects
                         </a>
                     </li>
@@ -42,11 +42,7 @@ export default function Navbar() {
                             About Us
                         </a>
                     </li>
-                    <li>
-                        <a className="block py-2 px-3 rounded-md text-gray-700 hover:text-[#FF8C42] hover:bg-orange-50 md:hover:bg-transparent transition-colors md:p-0 whitespace-nowrap" href="#news">
-                            News
-                        </a>
-                    </li>
+           
                     <li>
                         <a className="inline-block w-full md:w-auto text-center bg-[#FF8C42] hover:bg-[#ff7a28] text-white px-6 py-2.5 rounded-md transition-colors font-medium whitespace-nowrap" href="contact">
                             Get in Touch

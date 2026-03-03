@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import contactBg from "../assets/contact.png";
+import ContactMap from "../components/ContactMap";
 
 export default function Contact() {
     const [formData, setFormData] = useState({
@@ -170,6 +171,7 @@ export default function Contact() {
                         </button>
                     </form>
                 </div>
+                <ContactMap/>
             </section>
         </div>
     );

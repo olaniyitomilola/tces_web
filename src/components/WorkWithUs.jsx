@@ -13,7 +13,7 @@ export default function WorkWithUs() {
 
                     {/* Right Side - Content */}
                     <div className="lg:w-1/2 space-y-8">
-                        <p className="text-lg md:text-xl lg:text-2xl text-gray-700 text-justify leading-relaxed">
+                        <p className="text-lg md:text-lg lg:text-xl text-gray-700 text-justify leading-relaxed">
                             Whether you are planning a new project, requiring ongoing engineering support, or seeking a trusted partner for long-term collaboration, TCES is here to help. Our team are ready to discuss your needs, offer expert guidance, and deliver results you can rely on.
                         </p>
 

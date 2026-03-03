@@ -34,14 +34,12 @@ export default function FeaturedProjects() {
         <section className="w-full py-12 md:py-20">
             <div className="max-w-[1500px] mx-auto">
                 {/* Section Header */}
-                <div className="text-center mb-12">
-                    <p className="text-sm font-semibold text-[#FF8C42] uppercase tracking-wider mb-4">
-                        FEATURED PROJECTS
-                    </p>
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1a1a1a] mb-6">
+                <div className="text-left mb-12">
+                
+                    <h2 className="text-3xl non-animated-gradient md:text-4xl lg:text-5xl font-bold text-[#1a1a1a] mb-6">
                         Our Work in Action
                     </h2>
-                    <p className="text-base md:text-lg text-gray-700 max-w-4xl mx-auto">
+                    <p className="text-base md:text-lg text-gray-700 max-w-3xl ">
                         We've successfully delivered a wide range of civil and infrastructure projects, working with key partners across the UK.
                     </p>
                 </div>

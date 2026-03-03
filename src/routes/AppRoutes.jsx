@@ -3,6 +3,7 @@ import Layout from '../layout/Layout';
 import Home from '../pages/Home';
 import Contact from '../pages/Contact';
 import About from '../pages/About';
+import Expertise from '../pages/Expertise';
 
 
 
@@ -15,6 +16,7 @@ const AppRoutes = () => {
                     <Route index element={<Home />} />
                     <Route path='contact' element={<Contact/>}/>
                     <Route path= 'about' element = {<About/>} />
+                    <Route path= 'expertise' element = {<Expertise/>} />
                 </Route>
                 
 
