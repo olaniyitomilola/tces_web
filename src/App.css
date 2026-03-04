@@ -17,6 +17,50 @@ body {
     scroll-behavior: smooth;
 }
 
+/* Add to your global CSS or index.css */
+
+/* Slow rotation for main gear */
+@keyframes spin-slow {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-spin-slow {
+    animation: spin-slow 20s linear infinite;
+}
+
+/* Counter-rotation for image inside gear */
+@keyframes spin-reverse {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.animate-spin-reverse {
+    animation: spin-reverse 20s linear infinite;
+}
+
+/* Slower reverse rotation for small gears */
+@keyframes spin-slow-reverse {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.animate-spin-slow-reverse {
+    animation: spin-slow-reverse 15s linear infinite;
+}
+
 /* Prevent any dark mode overrides */
 @media (prefers-color-scheme: dark) {
     :root,
